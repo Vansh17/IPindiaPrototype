@@ -13,7 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import Dropdown_Gi from "./Dropdown_Gi";
+// import Dropdown_Gi from "./Dropdown_Gi";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
 export default function GiQuerySent({navigation})
@@ -64,7 +64,7 @@ export default function GiQuerySent({navigation})
                 <Image style = {styles.logo} source = {require('../assets/logo.png')} />
                 <View style={styles.headermiddle}>
 
-                    <Text style={styles.headermiddletxt}>Designs Query</Text>
+                    <Text style={styles.headermiddletxt}>GI Query</Text>
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
@@ -107,7 +107,7 @@ export default function GiQuerySent({navigation})
                 </View>
                 </ScrollView>
                 <View style={{top:-910,left:100}}>
-                        <DropdownGI/>
+                        {/* <DropdownGI/> */}
                     </View>
             </View>
            

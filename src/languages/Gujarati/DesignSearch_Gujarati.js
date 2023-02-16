@@ -15,10 +15,9 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { Component } from "react/cjs/react.development";
 // import Dropdown from "./Dropdown";
-// import Dropdown_Gi from "./Dropdown_Gi"
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
-export default class GiSearch extends Component
+export default class DesignSearch_Gujarati extends Component
 {
   // const [isOpen,setIsOpen]=useState(false);
   
@@ -48,7 +47,7 @@ export default class GiSearch extends Component
     if (this.state.textInputHolder == temp) {
       //Captcha match
       // Alert.alert("Captcha Matched");
-      this.props.navigation.navigate('GiStatus')
+      this.props.navigation.navigate('DesignStatus_Gujarati')
     }
     else {
       //Captcha not match
@@ -58,12 +57,17 @@ export default class GiSearch extends Component
     this.generateCaptcha();
   }
 
-  RaiseQueryGi=()=>{
-    this.props.navigation.navigate('GiQuery')
+
+  RaiseDesignQuery=()=>{
+    this.props.navigation.navigate('DesignQuery_Gujarati')
 
   }
 //   const onPressHandlerScan=()=>{
 //     navigation.navigate('SelectFruit')
+    
+//   }
+//   const onPressHandlerSupport=()=>{
+//     navigation.navigate('Support')
     
 //   }
 
@@ -83,19 +87,18 @@ render()
             
         </View>
         <ScrollView>
-            <Image style = {styles.logo} source = {require('../assets/logo.png')} />
+            <Image style = {styles.logo} source = {require('../../../assets/logo.png')} />
             <View style={styles.headermiddle}>
-                <Text style={styles.headermiddletxt}>GI Search</Text>
+                <Text style={styles.headermiddletxt}>ડિઝાઇન શોધ</Text>
             </View>
             <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}>
             </View>
-
             <View>
                 <TouchableOpacity style={styles.buttons}
-                onPress={this.RaiseQueryGi}
+                onPress={this.RaiseDesignQuery}
                 >
-                    <Text style={styles.text}>
-                        Click here to raise a query
+                    <Text style={styles.text} >
+                    પ્રશ્ન ઉઠાવવા માટે અહીં ક્લિક કરો
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -103,14 +106,14 @@ render()
             <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}>
             </View>
             <Text style={{fontSize:18,alignSelf:"center",marginTop:10}}>
-              Application Number:
+            અરજી નંબર
             </Text>
             <TextInput
             style={{
               marginTop:20,
               width:'85%',
               height:50,
-              borderColor: '#8B4500',
+              borderColor: '#346002',
               borderWidth: 1,
               alignSelf:'center',
               borderRadius:15,
@@ -119,8 +122,9 @@ render()
              placeholder="Application number: "
             />
             <Text style={{fontSize:15,alignSelf:"center",marginTop:10,color:'grey'}}>
-              (Put Application Number: 1)
+              (Put Application Number: 366737-008)
             </Text>
+
 
             
         <View style={styles.captchaContainerView}>
@@ -133,7 +137,7 @@ render()
             <TouchableOpacity onPress={this.generateCaptcha} style={styles.button_refresh}>
               {/* <Image source={{ uri: "asset:/images/refresh.png" }}
                 style={{ width: 40, height: 35, resizeMode: 'contain', margin: 20 }} /> */}
-            <Image style = {{width: 40, height: 35}} source = {require('../assets/refresh_button.png')} />
+            <Image style = {{width: 40, height: 35}} source = {require('../../../assets/refresh_button.png')} />
 
             </TouchableOpacity>
           </View>
@@ -144,14 +148,14 @@ render()
 
 
             <Text style={{fontSize:18,alignSelf:"center"}}>
-              Enter Code:<Text style={{color:'red'}}>*</Text>
+            કોડ દાખલ કરો<Text style={{color:'red'}}>*</Text>
             </Text>
             <TextInput
             style={{
               marginTop:20,
               width:'85%',
               height:50,
-              borderColor: '#8B4500',
+              borderColor: '#346002',
               borderWidth: 1,
               alignSelf:'center',
               borderRadius:15,
@@ -162,10 +166,10 @@ render()
             />
 
         <TouchableOpacity style={styles.button} onPress={this.validateCaptchaCode} >
-          <Text style={styles.text}>Submit</Text>
+          <Text style={styles.text}>આગળ વધો</Text>
         </TouchableOpacity>
           
-          <Image style = {styles.logobottom} source = {require('../assets/logo_bottom.png')} />
+          <Image style = {styles.logobottom} source = {require('../../../assets/logo_bottom.png')} />
           <View style={styles.footer}>
           <Text style={styles.footertxt}>
           Terms & conditions | Privacy Policy | Copyright | 
@@ -174,7 +178,7 @@ render()
           </View>
         </ScrollView>
         <View style={{top:-845,left:100}}>
-          {/* <Dropdown_Gi/> */}
+          {/* <Dropdown/> */}
         </View> 
     </View>
    
@@ -195,7 +199,7 @@ const styles = StyleSheet.create({
       alignSelf:'center'
     },
     button:{
-      backgroundColor:'#8B4500',
+      backgroundColor:'#346002',
       width: 114,
       height: 40,
       marginTop:20,
@@ -203,13 +207,13 @@ const styles = StyleSheet.create({
       borderRadius:15,
     },
     buttons:{
-        backgroundColor:'#8B4500',
-        width: 250,
-        height: 40,
-        marginTop:20,
-        alignSelf:"center",
-        borderRadius:15,
-      },
+      backgroundColor:'#346002',
+      width: 250,
+      height: 40,
+      marginTop:20,
+      alignSelf:"center",
+      borderRadius:15,
+    },
     inner:{
       width:'100%',
     },
@@ -247,7 +251,7 @@ const styles = StyleSheet.create({
       alignSelf:'center',
     },
     headertop:{
-      backgroundColor:'#8B4500',
+      backgroundColor:'#346002',
       height:115,
       width:"100%",
       justifyContent:'center',
@@ -266,7 +270,7 @@ const styles = StyleSheet.create({
         // widht:'40%',
     },
     headermiddle:{
-        backgroundColor:'#8B4500',
+        backgroundColor:'#346002',
         marginTop:25,
         height:50,
         width:'100%',

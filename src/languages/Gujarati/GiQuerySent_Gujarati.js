@@ -11,40 +11,13 @@ import {
     Pressable,
     TouchableOpacity,
     ScrollView,
-    
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 // import Dropdown from "./Dropdown";
-// import Dropdown_Gi from "./Dropdown_Gi";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
-import { getDatabase, ref, onValue,set } from 'firebase/database';
-
-export default function GiQuery({navigation})
+export default function GiQuerySent_Gujarati({navigation})
 {
-    
-    const [text1, setText1] = useState('')
-    const [text2, setText2] = useState('')
-
-    const AddData=()=>{
-        const db =getDatabase();
-
-        set(ref(db, 'users/'+text1),{
-            Application_Number:text1,
-            Query:text2,
-        });
-        setText1('')
-        setText2('')
-    }
-    
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
 
 
         return (    
@@ -61,14 +34,14 @@ export default function GiQuery({navigation})
                 </View>
                 <ScrollView>
                 
-                <Image style = {styles.logo} source = {require('../assets/logo.png')} />
+                <Image style = {styles.logo} source = {require('../../../assets/logo.png')} />
                 <View style={styles.headermiddle}>
 
-                    <Text style={styles.headermiddletxt}>GI Query</Text>
+                    <Text style={styles.headermiddletxt}>GI પૂછો</Text>
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                <Text
+                {/* <Text
                     style={{fontSize:18, textAlign:'center',marginTop:10}}
                 >Application Number:
                 </Text>
@@ -76,36 +49,26 @@ export default function GiQuery({navigation})
                     style={styles.input1}
                     placeholder=" Application Number"
                     autoCapitalize="none"
-                    autoCorrect={false} 
-                    value={text1}
-                    onChangeText={(text1) => {
-                        setText1(text1)
-                      }}    
+                    autoCorrect={false}   
                     multiline
                 />
                 <Text
                     style={{fontSize:18, textAlign:'center',marginTop:10}}
                 >Query:
-                </Text>
-                <TextInput
-                    style={styles.input2}
-                    placeholder=" Type your query"
-                    value={text2}
-                    onChangeText={(text2) => {
-                        setText2(text2)
-                      }} 
-                    multiline
-                />
-                <TouchableOpacity style={styles.button}
-                onPress={()=>{
-                    AddData(''), 
-                    navigation.navigate('GiQuerySent')
-                }}
-                >
+                </Text> */}
+                <View style={styles.input2}>
+                    <Text style={styles.querystatus1}>
+                    તમારો પ્રશ્ન અમારી સાથે સફળતાપૂર્વક રજીસ્ટર થઈ ગયો છે.
+                    </Text>
+                    <Text style={styles.querystatus2}>
+                    તમારા રજિસ્ટર્ડ ઈમેલ આઈડી પર ટૂંક સમયમાં જ પ્રશ્નનો જવાબ આપવામાં આવશે!
+                    </Text>  
+                </View>
+                {/* <TouchableOpacity style={styles.button}>
                     <Text style={styles.buttontxt}>Send query</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                <Image style = {styles.logobottom} source = {require('../assets/logo_bottom.png')} />
+                <Image style = {styles.logobottom} source = {require('../../../assets/logo_bottom.png')} />
                 
                 <View style={styles.footer}>
                     <Text style={styles.footertxt}>
@@ -114,8 +77,8 @@ export default function GiQuery({navigation})
                     </Text>
                 </View>
                 </ScrollView>
-                <View style={{top:-910,left:115}}>
-                        {/* <Dropdown_Gi/> */}
+                <View style={{top:-910,left:100}}>
+                        {/* <Dropdown/> */}
                     </View>
             </View>
            
@@ -149,7 +112,7 @@ const styles = StyleSheet.create({
     },
     headertop:{
     backgroundColor:'#8B4500',
-      height:110,
+      height:115,
       width:"100%",
       justifyContent:'center',
       alignContent:'center',
@@ -192,7 +155,7 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         borderRadius:15,
         textAlign:'left',
-        paddingBottom:200,
+        // paddingBottom:200,
         paddingLeft:5,
         paddingRight:5,
        },
@@ -224,7 +187,23 @@ const styles = StyleSheet.create({
         width:'25%',
         right:-300,
         height:"20%",
-       }
+       },
+       querystatus1:{
+        fontSize:21,
+        textAlign:'center',
+        fontWeight:'bold',
+        justifyContent:'center',
+        // alignContent:'justify'
+       },
+       querystatus2:{
+        fontSize:15,
+        textAlign:'center',
+        // fontWeight:'bold',
+        justifyContent:'center',
+        // alignContent:'justify',
+        paddingTop:60
+       },
+
    
 
   })

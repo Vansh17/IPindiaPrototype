@@ -16,7 +16,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 import { firebase } from '../config';
 // import { firebase2 } from '../config2'
 // import { useFonts } from 'expo-font';
@@ -77,16 +77,27 @@ export default function DesignLogin({navigation})
                     multiline
                 />
                 <Text
+                        style={{fontSize:15,left:25, color:"grey"}}
+                    >(Put Email as demo@gmail.com)
+                    </Text>
+
+                <Text
                     style={{fontSize:18,marginTop:10,left:25,marginTop:30}}
                 >Password:
                 </Text>
                 <TextInput
                     style={styles.input1}
                     placeholder=" Password"
-                    onChangeText={(password)=> setPassword(password)}
+                    autoCapitalize={'none'}
                     secureTextEntry={true}
+                    onChangeText={(password)=> setPassword(password)}
+                    
                     multiline
                 />
+                <Text
+                        style={{fontSize:15,left:25, color:"grey"}}
+                    >(Put Password as 123456)
+                    </Text>
 
                 <TouchableOpacity style={styles.button}
                 onPress={()=> loginUser(email,password)}

@@ -16,7 +16,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
 import { firebase } from '../config';

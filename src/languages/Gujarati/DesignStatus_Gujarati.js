@@ -20,39 +20,20 @@ import { NavigationContainer } from "@react-navigation/native";
 // import Dropdown_Status_Design from "./Dropdown_Status_Design";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
-export default function DesignStatus({navigation})
+export default function DesignStatus_Gujarati({navigation})
 {
     
   
     
   const onPressHandlerBack=()=>{
-    navigation.navigate('DesignSearch')
+    navigation.navigate('DesignSearch_Gujarati')
     
   }
 //   const onPressHandlerSupport=()=>{
 //     navigation.navigate('Support')
     
 //   }
-//   const onPressHandlerLogin=()=>{
-//     navigation.navigate('Login')
-    
-//   }
 
-
-
-//   const[name,setFirstName]=useState('')
-//     useEffect(()=>{
-//         firebase.firestore().collection('users')
-//         .doc(firebase.auth().currentUser.uid).get()
-//         .then((snapshot)=>{
-//             if(snapshot.exists){
-//                 setFirstName(snapshot.data())
-//             }
-//             else{
-//                 console.log('User doesnot exists!')
-//             }
-//         })
-//     }, [])
 
         return (    
         
@@ -67,10 +48,10 @@ export default function DesignStatus({navigation})
                 </View>
                 <ScrollView>
                 
-                <Image style = {styles.logo} source = {require('../assets/logo.png')} />
+                <Image style = {styles.logo} source = {require('../../../assets/logo.png')} />
                 <View style={styles.headermiddle}>
 
-                    <Text style={styles.headermiddletxt}>Application</Text>
+                    <Text style={styles.headermiddletxt}>અરજી</Text>
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
@@ -83,12 +64,12 @@ export default function DesignStatus({navigation})
                     <View style={[styles.card, styles.shadowProp]}>
                         <View style={styles.head}>
                                 <Text style={styles.texts}>
-                                    Design Application Details
+                                ડિઝાઇન અરજી વિગતો
                                 </Text>
                         </View>
                         <View>
                             <Text style={styles.text1}>
-                                Applicaton Number:
+                            અરજી સંખ્યા
                             </Text>
                             <Text style={styles.text2}>
                                 366737-008
@@ -97,7 +78,7 @@ export default function DesignStatus({navigation})
 
                         <View>
                             <Text style={styles.text1}>
-                                CBR Number:
+                                CBR સંખ્યા
                             </Text>
                             <Text style={styles.text2}>
                             200073
@@ -106,7 +87,7 @@ export default function DesignStatus({navigation})
 
                         <View>
                             <Text style={styles.text1}>
-                                CBR Date:
+                                CBR તારીખ
                             </Text>
                             <Text style={styles.text2}>
                                 24/06/2022 17:23:00
@@ -115,29 +96,29 @@ export default function DesignStatus({navigation})
 
                         <View>
                             <Text style={styles.text1}>
-                                Applicant Name:
+                            અરજદાર નામ
                             </Text>
                             <Text style={styles.text2}>
-                            MARUTI SUZUKI INDIA   LTD.
+                            મારુતિ સુઝુકી ઈન્ડિયા લિ.
                             </Text>
                         </View>
                         <View style={styles.head}>
                                 <Text style={styles.texts}>
-                                    Design Application Status
+                                ડિઝાઇન અરજી સ્થિતિ
                                 </Text>
                         </View>
                         <View>
                             <Text style={styles.text1}>
-                                Applicaton Status:
+                            અરજી સ્થિતિ
                             </Text>
                             <Text style={styles.text3}>
-                            Design Accepted and Published, Journal No is 42/2022 and Journal Date is 21/10/2022.
+                            ડિઝાઇન સ્વીકૃત અને પ્રકાશિત, જર્નલ નંબર 42/2022 છે અને જર્નલની તારીખ 21/10/2022 છે.
                             </Text>
                         </View>
                         <TouchableOpacity style={styles.button}
                         onPress={onPressHandlerBack}
                         >
-                            <Text style={styles.buttontxt}>Back</Text>
+                            <Text style={styles.buttontxt}>પાછળ</Text>
                         </TouchableOpacity>
                     </View>
                 </ScrollView>

@@ -18,7 +18,7 @@ import { Component } from "react/cjs/react.development";
 // import Dropdown_Gi from "./Dropdown_Gi"
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
-export default class GiSearch extends Component
+export default class GiSearch_Hindi extends Component
 {
   // const [isOpen,setIsOpen]=useState(false);
   
@@ -48,7 +48,7 @@ export default class GiSearch extends Component
     if (this.state.textInputHolder == temp) {
       //Captcha match
       // Alert.alert("Captcha Matched");
-      this.props.navigation.navigate('GiStatus')
+      this.props.navigation.navigate('GiStatus_Hindi')
     }
     else {
       //Captcha not match
@@ -59,11 +59,15 @@ export default class GiSearch extends Component
   }
 
   RaiseQueryGi=()=>{
-    this.props.navigation.navigate('GiQuery')
+    this.props.navigation.navigate('GiQuery_Hindi')
 
   }
 //   const onPressHandlerScan=()=>{
 //     navigation.navigate('SelectFruit')
+    
+//   }
+//   const onPressHandlerSupport=()=>{
+//     navigation.navigate('Support')
     
 //   }
 
@@ -83,9 +87,9 @@ render()
             
         </View>
         <ScrollView>
-            <Image style = {styles.logo} source = {require('../assets/logo.png')} />
+            <Image style = {styles.logo} source = {require('../../../assets/logo.png')} />
             <View style={styles.headermiddle}>
-                <Text style={styles.headermiddletxt}>GI Search</Text>
+                <Text style={styles.headermiddletxt}>GI खोज</Text>
             </View>
             <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}>
             </View>
@@ -95,7 +99,7 @@ render()
                 onPress={this.RaiseQueryGi}
                 >
                     <Text style={styles.text}>
-                        Click here to raise a query
+                    प्रश्न उठाने के लिए यहां क्लिक करें
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -103,7 +107,7 @@ render()
             <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}>
             </View>
             <Text style={{fontSize:18,alignSelf:"center",marginTop:10}}>
-              Application Number:
+            आवेदन  क्रमांक
             </Text>
             <TextInput
             style={{
@@ -118,7 +122,7 @@ render()
              }}
              placeholder="Application number: "
             />
-            <Text style={{fontSize:15,alignSelf:"center",marginTop:10,color:'grey'}}>
+          <Text style={{fontSize:15,alignSelf:"center",marginTop:10,color:'grey'}}>
               (Put Application Number: 1)
             </Text>
 
@@ -133,7 +137,7 @@ render()
             <TouchableOpacity onPress={this.generateCaptcha} style={styles.button_refresh}>
               {/* <Image source={{ uri: "asset:/images/refresh.png" }}
                 style={{ width: 40, height: 35, resizeMode: 'contain', margin: 20 }} /> */}
-            <Image style = {{width: 40, height: 35}} source = {require('../assets/refresh_button.png')} />
+            <Image style = {{width: 40, height: 35}} source = {require('../../../assets/refresh_button.png')} />
 
             </TouchableOpacity>
           </View>
@@ -144,7 +148,7 @@ render()
 
 
             <Text style={{fontSize:18,alignSelf:"center"}}>
-              Enter Code:<Text style={{color:'red'}}>*</Text>
+            कोड दर्ज करें<Text style={{color:'red'}}>*</Text>
             </Text>
             <TextInput
             style={{
@@ -162,10 +166,10 @@ render()
             />
 
         <TouchableOpacity style={styles.button} onPress={this.validateCaptchaCode} >
-          <Text style={styles.text}>Submit</Text>
+          <Text style={styles.text}>कोड दर्ज करें</Text>
         </TouchableOpacity>
           
-          <Image style = {styles.logobottom} source = {require('../assets/logo_bottom.png')} />
+          <Image style = {styles.logobottom} source = {require('../../../assets/logo_bottom.png')} />
           <View style={styles.footer}>
           <Text style={styles.footertxt}>
           Terms & conditions | Privacy Policy | Copyright | 

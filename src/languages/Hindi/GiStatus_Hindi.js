@@ -17,10 +17,10 @@ import { NavigationContainer } from "@react-navigation/native";
 // import Dropdown_Status_Design from "./Dropdown_Status_Gi";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
-export default function GiStatus({navigation})
+export default function GiStatus_Hindi({navigation})
 {
     const onPressHandlerBack=()=>{
-        navigation.navigate('GiSearch')
+        navigation.navigate('GiSearch_Hindi')
         
       }
         return (    
@@ -31,9 +31,9 @@ export default function GiStatus({navigation})
                     </Text>
                 </View>
                 <ScrollView>        
-                <Image style = {styles.logo} source = {require('../assets/logo.png')} />
+                <Image style = {styles.logo} source = {require('../../../assets/logo.png')} />
                 <View style={styles.headermiddle}>
-                    <Text style={styles.headermiddletxt}>Application</Text>
+                    <Text style={styles.headermiddletxt}>अर्ज</Text>
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
 
@@ -45,12 +45,13 @@ export default function GiStatus({navigation})
                     <View style={[styles.card, styles.shadowProp]}>
                         <View style={styles.head}>
                                 <Text style={styles.statustxt}>
-                                    GI Application Details
+                                    GI आवेदन विवरण
                                 </Text>
                         </View>
                         <View>
                             <Text style={styles.text1}>
-                                Applicaton Number:
+                            
+                                आवेदन क्रमांक
                             </Text>
                             <Text style={styles.text2}>
                                 1
@@ -62,30 +63,33 @@ export default function GiStatus({navigation})
                                 Geographical Indications:
                             </Text>
                             <Text style={styles.text2}>
-                            Darjeeling Tea (Word)
+                            
+                                दार्जिलिंग चाय(Word)
                             </Text>
                         </View>
 
                         <View>
                             <Text style={styles.text1}>
-                                Applicant Name:
+                            आवेदक का नाम
                             </Text>
                             <Text style={styles.text2}>
-                                Tea Board
+                            
+                                चाय विभाग
                             </Text>
                         </View>
 
                         <View>
                             <Text style={styles.text1}>
-                                Applicant Address:
+                            आवेदक का पता
                             </Text>
                             <Text style={styles.text2}>
-                            Tea Board 14,B.T.M. Sarani (Brabourne Road), P.O.Box No. 2172, Kolkatta-700001, India
+                            
+                                टी बोर्ड 14, बी.टी.एम. सारणी (ब्रेबॉर्न रोड), पी.ओ.बॉक्स नंबर 2172, कोलकाता-700001, भारत
                             </Text>
                         </View>
                         <View >
                                 <Text style={styles.text1}>
-                                Date of Filing:
+                                दाखिल करने की तिथि
                                 </Text>
                                 <Text style={styles.text2}>
                                 27/10/2003
@@ -93,7 +97,8 @@ export default function GiStatus({navigation})
                         </View>
                         <View >
                                 <Text style={styles.text1}>
-                                Class:
+                                
+                                    दरजा
                                 </Text>
                                 <Text style={styles.text2}>
                                 30
@@ -101,31 +106,34 @@ export default function GiStatus({navigation})
                         </View>
                         <View >
                                 <Text style={styles.text1}>
-                                Goods:
+                                वस्तू
                                 </Text>
                                 <Text style={styles.text2}>
-                                Agriculture
+                                
+                                    कृषि
                                 </Text>
                         </View>
                         <View>
                                 <Text style={styles.text1}>
-                                Geographical Area:
+                                
+                                    भौगोलिक क्षेत्र
                                 </Text>
                                 <Text style={styles.text2}>
-                                Darjeeling (West Bengal)
+                                
+                                    दार्जिलिंग (पश्चिम बंगाल)
                                 </Text>
                         </View>
                         <View>
                                 <Text style={styles.text1}>
-                                Priority Country:
+                                प्राथमिकता वाला देश
                                 </Text>
                                 <Text style={styles.text2}>
-                                India
+                                भारत
                                 </Text>
                         </View>
                         <View>
                                 <Text style={styles.text1}>
-                                Journal Number:
+                                जर्नल क्रमांक
                                 </Text>
                                 <Text style={styles.text2}>
                                 1
@@ -133,7 +141,7 @@ export default function GiStatus({navigation})
                         </View>
                         <View>
                                 <Text style={styles.text1}>
-                                Availability Date:
+                                उपलब्धता तारीख
                                 </Text>
                                 <Text style={styles.text2}>
                                 01/07/2004
@@ -141,7 +149,7 @@ export default function GiStatus({navigation})
                         </View>
                         <View >
                                 <Text style={styles.text1}>
-                                Certificate Number:
+                                प्रमाणपत्र क्रमांक
                                 </Text>
                                 <Text style={styles.text2}>
                                 1
@@ -149,7 +157,7 @@ export default function GiStatus({navigation})
                         </View>
                         <View >
                                 <Text style={styles.text1}>
-                                Certificate Date:
+                                प्रमाणपत्र तारीख
                                 </Text>
                                 <Text style={styles.text2}>
                                 29/10/2004
@@ -157,7 +165,8 @@ export default function GiStatus({navigation})
                         </View>
                         <View>
                                 <Text style={styles.text1}>
-                                Registration Valid Upto:
+                                
+                                    तक वैध पंजीकरण
                                 </Text>
                                 <Text style={styles.text2}>
                                 26/10/2023
@@ -165,21 +174,21 @@ export default function GiStatus({navigation})
                         </View>
                         <View style={styles.head}>
                                 <Text style={styles.statustxt}>
-                                    GI Application Status
+                                    GI आवेदन की स्थिति
                                 </Text>
                         </View>
                         <View>
                                 <Text style={styles.text1}>
-                                Status:
+                                स्थिती
                                 </Text>
                                 <Text style={styles.text2}>
-                                Registered
+                                दर्ज
                                 </Text>
                         </View>
                     <TouchableOpacity style={styles.button}
                         onPress={onPressHandlerBack}
                     >
-                        <Text style={styles.buttontxt}>Back</Text>
+                        <Text style={styles.buttontxt}>पीछे जाए</Text>
                     </TouchableOpacity>
                 
                     </View>

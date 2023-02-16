@@ -16,42 +16,40 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
+// import MSSQL from 'react-native-mssql';
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
+import { getDatabase, ref, onValue,set } from 'firebase/database';
 export default function DesignQuery({navigation})
 {
-    
-  
     
 //   const onPressHandlerScan=()=>{
 //     navigation.navigate('SelectFruit')
     
 //   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
-//   const onPressHandlerLogin=()=>{
-//     navigation.navigate('Login')
-    
-//   }
+    // function storeHighScore(userId,score)
+    // {
+    //     const db =getDatabase();
+    //     const reference = ref(db, 'users/'+userId);
+    //     set(reference,{
+    //         highscore:score,
+    //     });
+    // }
 
+    const [text1, setText1] = useState('')
+    const [text2, setText2] = useState('')
 
+    const AddData=()=>{
+        const db =getDatabase();
 
-//   const[name,setFirstName]=useState('')
-//     useEffect(()=>{
-//         firebase.firestore().collection('users')
-//         .doc(firebase.auth().currentUser.uid).get()
-//         .then((snapshot)=>{
-//             if(snapshot.exists){
-//                 setFirstName(snapshot.data())
-//             }
-//             else{
-//                 console.log('User doesnot exists!')
-//             }
-//         })
-//     }, [])
+        set(ref(db, 'users/'+text1),{
+            Application_Number:text1,
+            Query:text2,
+        });
+        setText1('')
+        setText2('')
+    }
 
         return (    
         
@@ -80,10 +78,14 @@ export default function DesignQuery({navigation})
                 </Text>
                 <TextInput
                     style={styles.input1}
+                    value={text1}
                     placeholder=" Application Number"
                     autoCapitalize="none"
-                    autoCorrect={false}   
-                    multiline
+                    autoCorrect={false} 
+                    onChangeText={(text1) => {
+                        setText1(text1)
+                      }}  
+                    // multiline
                 />
                 <Text
                     style={{fontSize:18, textAlign:'center',marginTop:10}}
@@ -91,10 +93,19 @@ export default function DesignQuery({navigation})
                 </Text>
                 <TextInput
                     style={styles.input2}
+                    value={text2}
                     placeholder=" Type your query"
+                    onChangeText={(text2) => {
+                        setText2(text2)
+                      }} 
                     multiline
                 />
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button}
+                onPress={()=>{
+                    AddData(''), 
+                    navigation.navigate('DesignQuerySent')
+                }}
+                >
                     <Text style={styles.buttontxt}>Send query</Text>
                 </TouchableOpacity>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
@@ -108,7 +119,7 @@ export default function DesignQuery({navigation})
                 </View>
                 </ScrollView>
                 <View style={{top:-910,left:100}}>
-                        <Dropdown/>
+                        
                     </View>
             </View>
            

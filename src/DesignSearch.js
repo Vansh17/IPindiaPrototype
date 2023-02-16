@@ -14,7 +14,7 @@ import {
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 import { Component } from "react/cjs/react.development";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
 export default class DesignSearch extends Component
@@ -62,34 +62,7 @@ export default class DesignSearch extends Component
     this.props.navigation.navigate('DesignQuery')
 
   }
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
-//   const onPressHandlerLogin=()=>{
-//     navigation.navigate('Login')
-    
-//   }
 
-
-
-//   const[name,setFirstName]=useState('')
-//     useEffect(()=>{
-//         firebase.firestore().collection('users')
-//         .doc(firebase.auth().currentUser.uid).get()
-//         .then((snapshot)=>{
-//             if(snapshot.exists){
-//                 setFirstName(snapshot.data())
-//             }
-//             else{
-//                 console.log('User doesnot exists!')
-//             }
-//         })
-//     }, [])
 render()
 {
   return (    
@@ -140,7 +113,9 @@ render()
              }}
              placeholder="Application number: "
             />
-
+            <Text style={{fontSize:15,alignSelf:"center",marginTop:10,color:'grey'}}>
+              (Put Application Number: 366737-008)
+            </Text>
 
             
         <View style={styles.captchaContainerView}>
@@ -194,7 +169,7 @@ render()
           </View>
         </ScrollView>
         <View style={{top:-845,left:100}}>
-          <Dropdown/>
+          {/* <Dropdown/> */}
         </View> 
     </View>
    
@@ -231,7 +206,7 @@ const styles = StyleSheet.create({
       borderRadius:15,
     },
     inner:{
-      width:'80%',
+      width:'100%',
     },
     button_refresh:{
       marginLeft:250,
@@ -268,7 +243,7 @@ const styles = StyleSheet.create({
     },
     headertop:{
       backgroundColor:'#346002',
-      height:145,
+      height:110,
       width:"100%",
       justifyContent:'center',
       alignContent:'center',
@@ -280,7 +255,7 @@ const styles = StyleSheet.create({
       marginTop:20,
     },
     headertxt:{
-        fontSize:15,
+        fontSize:14,
         top:10,
         padding:20,
         // widht:'40%',

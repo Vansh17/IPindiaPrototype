@@ -15,15 +15,20 @@ import {
     TouchableOpacity,
     // CustomButton,
   } from 'react-native';
+  import { firebase } from '../config';
 
 
   export default function Main({navigation})
   {
+
+    
+
+    
     const onPressHandler_Gi=()=>{
-      navigation.navigate('GiSearch')
+      navigation.navigate('Language_Gi')
     }
     const onPressHandler_design=()=>{
-      navigation.navigate('DesignSearch')
+      navigation.navigate('Language_Design')
     }
 
     return (
@@ -36,6 +41,13 @@ import {
             source={require('../assets/background.png')}
             
           >
+            <TouchableOpacity 
+              onPress={()=>{firebase.auth().signOut()}}
+              style={{ width:"100%",alignSelf:'center', height:"5%",borderRadius:15,top:45,}}>
+              <Text style={{alignSelf:"center",color:'#000000',marginTop:12,fontSize:20,marginLeft:240}}>
+                Sign Out
+              </Text>
+            </TouchableOpacity>
             <Image style = {styles.logo} source = {require('../assets/logo.png')} />
             
             <View style={styles.boxcont}>
@@ -61,8 +73,9 @@ import {
                 <Text style={{fontSize:25,alignSelf:"center",top:22}}>Geographical Indication</Text>
                 </Pressable>
               </View>
+              
             </View>
-
+            
             <View style={styles.footer}>
               <Text style={styles.footertxt}>
               Terms & conditions | Privacy Policy | Copyright | 
@@ -82,7 +95,7 @@ import {
       backgroundColor:'#D9D9D9',
       height:"80%",
       width:"100%",
-      top:80,
+      top:40,
       justifyContent:'center',
       alignContent:'center',
       alignSelf:'center'

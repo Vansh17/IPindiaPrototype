@@ -12,15 +12,15 @@ import {
     TouchableOpacity,
     ScrollView,
     
+    
+    
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Gi from "./Dropdown_Gi";
+// import Dropdown_DesignQuery_Marathi from "../src/languages/Marathi/Dropdown_DesignQuery_Marathi";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
 import { getDatabase, ref, onValue,set } from 'firebase/database';
-
-export default function GiQuery({navigation})
+export default function GiQuery_Marathi({navigation})
 {
     
     const [text1, setText1] = useState('')
@@ -41,10 +41,6 @@ export default function GiQuery({navigation})
 //     navigation.navigate('SelectFruit')
     
 //   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
 
 
         return (    
@@ -61,51 +57,52 @@ export default function GiQuery({navigation})
                 </View>
                 <ScrollView>
                 
-                <Image style = {styles.logo} source = {require('../assets/logo.png')} />
+                <Image style = {styles.logo} source = {require('../../../assets/logo.png')} />
                 <View style={styles.headermiddle}>
 
-                    <Text style={styles.headermiddletxt}>GI Query</Text>
+                    <Text style={styles.headermiddletxt}>GI विचारा</Text>
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
                 <Text
                     style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
+                >अर्ज क्रमांक
                 </Text>
                 <TextInput
                     style={styles.input1}
-                    placeholder=" Application Number"
+                    placeholder=" Application Number "
                     autoCapitalize="none"
-                    autoCorrect={false} 
+                    autoCorrect={false}  
                     value={text1}
                     onChangeText={(text1) => {
                         setText1(text1)
-                      }}    
+                      }}  
                     multiline
                 />
                 <Text
                     style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Query:
+                >प्रश्न विचार
                 </Text>
                 <TextInput
                     style={styles.input2}
                     placeholder=" Type your query"
                     value={text2}
+
                     onChangeText={(text2) => {
                         setText2(text2)
-                      }} 
+                      }}
                     multiline
                 />
                 <TouchableOpacity style={styles.button}
                 onPress={()=>{
                     AddData(''), 
-                    navigation.navigate('GiQuerySent')
+                    navigation.navigate('GiQuerySent_Marathi')
                 }}
                 >
-                    <Text style={styles.buttontxt}>Send query</Text>
+                    <Text style={styles.buttontxt}>प्रश्न विचारा</Text>
                 </TouchableOpacity>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                <Image style = {styles.logobottom} source = {require('../assets/logo_bottom.png')} />
+                <Image style = {styles.logobottom} source = {require('../../../assets/logo_bottom.png')} />
                 
                 <View style={styles.footer}>
                     <Text style={styles.footertxt}>
@@ -114,8 +111,8 @@ export default function GiQuery({navigation})
                     </Text>
                 </View>
                 </ScrollView>
-                <View style={{top:-910,left:115}}>
-                        {/* <Dropdown_Gi/> */}
+                <View style={{top:-910,left:100}}>
+                        {/* <Dropdown_DesignQuery_Marathi/> */}
                     </View>
             </View>
            

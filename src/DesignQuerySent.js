@@ -13,39 +13,12 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import Dropdown from "./Dropdown";
+// import Dropdown from "./Dropdown";
 // import { firebase } from '../../config';
 // import { useFonts } from 'expo-font';
 export default function DesignQuerySent({navigation})
 {
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
-//   const onPressHandlerLogin=()=>{
-//     navigation.navigate('Login')
-    
-//   }
 
-
-
-//   const[name,setFirstName]=useState('')
-//     useEffect(()=>{
-//         firebase.firestore().collection('users')
-//         .doc(firebase.auth().currentUser.uid).get()
-//         .then((snapshot)=>{
-//             if(snapshot.exists){
-//                 setFirstName(snapshot.data())
-//             }
-//             else{
-//                 console.log('User doesnot exists!')
-//             }
-//         })
-//     }, [])
 
         return (    
         
@@ -105,7 +78,7 @@ export default function DesignQuerySent({navigation})
                 </View>
                 </ScrollView>
                 <View style={{top:-910,left:100}}>
-                        <Dropdown/>
+                        {/* <Dropdown/> */}
                     </View>
             </View>
            
@@ -139,7 +112,7 @@ const styles = StyleSheet.create({
     },
     headertop:{
     backgroundColor:'#346002',
-      height:110,
+      height:115,
       width:"100%",
       justifyContent:'center',
       alignContent:'center',
