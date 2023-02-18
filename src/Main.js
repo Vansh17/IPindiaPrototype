@@ -44,7 +44,7 @@ import {
             <TouchableOpacity 
               onPress={()=>{firebase.auth().signOut()}}
               style={{ width:"100%",alignSelf:'center', height:"5%",borderRadius:15,top:45,}}>
-              <Text style={{alignSelf:"center",color:'#000000',marginTop:12,fontSize:20,marginLeft:240}}>
+              <Text style={{alignSelf:"center",color:'#000000',marginTop:0,fontSize:20,marginLeft:240}}>
                 Sign Out
               </Text>
             </TouchableOpacity>
@@ -76,12 +76,7 @@ import {
               
             </View>
             
-            <View style={styles.footer}>
-              <Text style={styles.footertxt}>
-              Terms & conditions | Privacy Policy | Copyright | 
-              Hyperlinking Policy | Accessibility | Archive
-              </Text>
-            </View>
+            
         </ImageBackground>
             
        </View>

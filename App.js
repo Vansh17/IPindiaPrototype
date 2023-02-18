@@ -169,7 +169,7 @@ function App()
           initialRouteName='DesignLogin'
   
           screenOptions={{
-            headerShown:true,
+            headerShown:false,
             swipeEnabled:true,
             gestureEnabled:true,
             headerTitleAlign:'center',
@@ -325,6 +325,9 @@ function App()
   return(
     <NavigationContainer >
         <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
         >
 
         <Stack.Screen

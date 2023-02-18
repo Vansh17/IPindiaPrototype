@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,Component } from "react";
 import {
     StyleSheet,
     Text,
@@ -13,7 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-import { Component } from "react/cjs/react.development";
+// import { Component } from "react/cjs/react.development";
 // import Dropdown from "./Dropdown";
 // import Dropdown_Gi from "./Dropdown_Gi"
 // import { firebase } from '../../config';
@@ -22,8 +22,8 @@ export default class GiSearch_Gujarati extends Component
 {
   
   
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       textInputHolder: 0,
       captchaHolder: 0,

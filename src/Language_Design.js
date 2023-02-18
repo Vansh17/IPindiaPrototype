@@ -245,7 +245,7 @@ return (
         
   <View style={styles.container}>
       <View style={styles.headertop}>
-          <Text style={{fontSize:28,textAlign:'center',marginTop:20, color:'#ffffff'}}>Select Language</Text>
+          <Text style={{fontSize:28,textAlign:'center', color:'#ffffff'}}>Select Language</Text>
       </View>
       
       
@@ -280,9 +280,10 @@ return (
 
       </View>
       <View style={styles.bottom_box}>
-        <Text style={styles.text}>These above languages are presented for the prototype</Text>
-        <Text style={styles.text}>The main product will contain these additional languages:</Text>
-        <View style={{width:'50%',marginTop:20,}}>
+        <View style={{padding:10}}>
+        <Text style={styles.text1}>These above languages are presented for the prototype</Text>
+        <Text style={styles.text1}>The main product will contain these additional languages:</Text>
+        {/* <View style={{width:'50%',marginTop:20,}}>
           <Text style={styles.text_left}>Punjabi</Text>
           <Text style={styles.text_left}>Tamil</Text>
           <Text style={styles.text_left}>Bengali</Text>
@@ -294,7 +295,10 @@ return (
           <Text style={styles.text_right}>French</Text>
           <Text style={styles.text_right}>Spanish</Text>
           <Text style={styles.text_right}>German</Text>
+        </View> */}
+        <Text style={styles.text1}>Punjabi, Tamil, Bengali, Assamese, Dutch, Kannada, French, Spanish, German</Text>
         </View>
+        
         
       </View>
 
@@ -318,7 +322,7 @@ fontSize:18,
 text1:{
   color:'#000000',
   alignSelf:"center",
-  marginTop:7,
+  marginTop:10,
   fontSize:15,
   },
 text_left:{
@@ -344,7 +348,7 @@ right:{
 bottom_box:{
   backgroundColor:"#ffffff",
   borderRadius:10,
-  height: 270,
+  height: 225,
   width: 270,
   alignSelf:"center",
   // marginTop:100,
@@ -374,7 +378,7 @@ alignSelf:'center',
 },
 headertop:{
 backgroundColor:'#346002',
-height:110,
+height:80,
 width:"100%",
 justifyContent:'center',
 alignContent:'center',
