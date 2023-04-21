@@ -39,21 +39,7 @@ export default function DesignQuerySent_Marathi({navigation})
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text>
-                <TextInput
-                    style={styles.input1}
-                    placeholder=" Application Number"
-                    autoCapitalize="none"
-                    autoCorrect={false}   
-                    multiline
-                />
-                <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Query:
-                </Text> */}
+                
                 <View style={styles.input2}>
                     <Text style={styles.querystatus1}>
                     तुमची क्वेरी आमच्याकडे यशस्वीरित्या नोंदणीकृत झाली आहे.

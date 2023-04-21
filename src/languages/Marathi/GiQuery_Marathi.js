@@ -16,9 +16,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown_DesignQuery_Marathi from "../src/languages/Marathi/Dropdown_DesignQuery_Marathi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 import { getDatabase, ref, onValue,set } from 'firebase/database';
 export default function GiQuery_Marathi({navigation})
 {

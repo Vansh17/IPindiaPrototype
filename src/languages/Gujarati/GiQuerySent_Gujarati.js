@@ -13,9 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function GiQuerySent_Gujarati({navigation})
 {
 
@@ -41,21 +39,7 @@ export default function GiQuerySent_Gujarati({navigation})
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text>
-                <TextInput
-                    style={styles.input1}
-                    placeholder=" Application Number"
-                    autoCapitalize="none"
-                    autoCorrect={false}   
-                    multiline
-                />
-                <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Query:
-                </Text> */}
+                
                 <View style={styles.input2}>
                     <Text style={styles.querystatus1}>
                     તમારો પ્રશ્ન અમારી સાથે સફળતાપૂર્વક રજીસ્ટર થઈ ગયો છે.
@@ -64,9 +48,7 @@ export default function GiQuerySent_Gujarati({navigation})
                     તમારા રજિસ્ટર્ડ ઈમેલ આઈડી પર ટૂંક સમયમાં જ પ્રશ્નનો જવાબ આપવામાં આવશે!
                     </Text>  
                 </View>
-                {/* <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttontxt}>Send query</Text>
-                </TouchableOpacity> */}
+                
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
                 <Image style = {styles.logobottom} source = {require('../../../assets/logo_bottom.png')} />
                 

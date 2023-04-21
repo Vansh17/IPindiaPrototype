@@ -16,10 +16,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Status_Design from "./Dropdown_Status_Design";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function DesignStatus_Gujarati({navigation})
 {
     
@@ -29,10 +26,7 @@ export default function DesignStatus_Gujarati({navigation})
     navigation.navigate('DesignSearch_Gujarati')
     
   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
+
 
 
         return (    
@@ -56,10 +50,7 @@ export default function DesignStatus_Gujarati({navigation})
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
 
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text> */}
+                
                 <ScrollView>
                     <View style={[styles.card, styles.shadowProp]}>
                         <View style={styles.head}>

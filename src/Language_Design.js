@@ -25,14 +25,14 @@ export default function Language_Design({navigation})
 {
 
   var [ isPress, setIsPress ] = React.useState(false);
-
+  //To create an effect while prsseing the button and move forward. Behaves like touchable opacity
   var touchProps = {
     activeOpacity: 1,
     underlayColor: '#346002',                               // <-- "backgroundColor" will be always overwritten by "underlayColor"
     style: isPress ? styles.btnPress : styles.btnNormal, // <-- but you can still apply other style changes
     onHideUnderlay: () => setIsPress(false),
     onShowUnderlay: () => setIsPress(true),
-    onPress: () => console.log('HELLO'),                 // <-- "onPress" is apparently required
+    onPress: () => console.log('HELLO'),                 // <-- "onPress" is apparently required(The above function might not work without this)
   };
 
 
@@ -51,194 +51,6 @@ export default function Language_Design({navigation})
       const onPressHandler_Lang_Design_Guj=()=>{
         navigation.navigate('DesignSearch_Gujarati')
       }
-
-//         return (    
-        
-//             <View style={styles.container}>
-//                 <View style={styles.headertop}>
-
-//                 </View>
-                
-                
-                
-//                 <ScrollView>
-//                 <Image style = {styles.logo} source = {require('../assets/logo.png')} />
-                
-                
-//                 <View style={styles.input2}>
-//                     <Text style={{fontSize:28,textAlign:'center',marginTop:20}}>Language Selection Design</Text>
-//                     <TouchableHighlight
-//                     style={styles.button}
-//                     onPress={onPressHandler_Lang_Design_Eng}
-//                     {...touchProps}
-//                     >
-//                         <Text style={styles.text}>
-//                             English
-//                         </Text>
-//                     </TouchableHighlight>
-
-//                     <TouchableOpacity
-//                     style={styles.button}
-//                     onPress={onPressHandler_Lang_Design_Hin}>
-//                         <Text style={styles.text}>
-//                         हिंदी
-//                         </Text>
-//                     </TouchableOpacity>
-
-//                     <TouchableOpacity
-//                     style={styles.button}
-//                     onPress={onPressHandler_Lang_Design_Mar}>
-//                         <Text style={styles.text}>
-//                         मराठी
-//                         </Text>
-//                     </TouchableOpacity>
-                    
-//                     <TouchableOpacity
-//                     style={styles.button}
-//                     onPress={onPressHandler_Lang_Design_Guj}>
-//                         <Text style={styles.text}>
-//                         ગુજરાતી
-//                         </Text>
-//                     </TouchableOpacity>
-//                     <TouchableHighlight {...touchProps}>
-//                       <Text>Click here</Text>
-//                     </TouchableHighlight>
-
-//                 </View>
-                
-
-//                 </ScrollView>
-//             </View>
-           
-//         )
-//     }
-    
-
-// const styles = StyleSheet.create({
-//     container: {
-//       flex: 1,
-//     },
-//     btnNormal: {
-//       borderColor: '#346002',
-//       borderWidth: 1,
-//       borderRadius: 10,
-//       height: 30,
-//       width: 100,
-//     },
-//     btnPress: {
-//       borderColor: '#346002',
-//       borderWidth: 1,
-//       height: 30,
-//       width: 100,
-//     },
-  
-//     text:{
-//         color:'#000000',
-//         alignSelf:"center",
-//         marginTop:10
-// ,    },
-//     footer:{
-//       backgroundColor:'#3A3B3C',
-//       height:90,
-//       width:"100%",
-//       justifyContent:'center',
-//       alignContent:'center',
-//       alignSelf:'center'
-//     },
-//     footertxt:{
-//       fontSize:15,
-//       color:'#ffffff',
-//       textAlign:'center',
-//     },
-//     logo:{
-//       height:140,
-//       width:155,
-//       marginTop:30,
-//       alignItems:'center',
-//       alignSelf:'center',
-//     },
-//     headertop:{
-//     backgroundColor:'#346002',
-//       height:110,
-//       width:"100%",
-//       justifyContent:'center',
-//       alignContent:'center',
-//       alignSelf:'center',
-//       borderBottomRightRadius:100
-//     },
-//     headertxt:{
-//         fontSize:14,
-//         top:7,
-//         padding:20,
-//     },
-//     headermiddle:{
-//         backgroundColor:'#346002',
-//         marginTop:25,
-//         height:50,
-//         width:'100%',
-//     },
-//     headermiddletxt:{
-//         fontSize:20,
-//         color:'#ffffff',
-//         textAlign:'center',
-//         padding:10,
-//     },
-//     input1:{
-//         marginTop:10,
-//         width:'85%',
-//         height:50,
-//         borderColor: '#346002',
-//         borderWidth: 1,
-//         alignSelf:'center',
-//         borderRadius:15,
-//         paddingLeft:5,
-//         paddingRight:5,
-//        },
-//        input2:{
-//         marginTop:70,
-//         width:'80%',
-//         height:450,
-//         borderColor: '#346002',
-//         borderWidth: 1,
-//         alignSelf:'center',
-//         borderRadius:15,
-//         textAlign:'left',
-//         paddingBottom:200,
-//         paddingLeft:5,
-//         paddingRight:5,
-//        },
-//        button:{
-//         backgroundColor:'#346002',
-//         height:45,
-//         width:110,
-//         alignSelf:'center',
-//         borderRadius:7,
-//         marginTop:30,
-//        },
-//        buttontxt:{
-//         fontSize:15,
-//         color:'#ffffff',
-//         textAlign:'center',
-//         padding:10,
-
-//        },
-//        logobottom:{
-//         // height:'10%'
-//         height:150,
-//         width:280,
-//         alignSelf:'center'
-//        },
-//        menu:{
-//         backgroundColor:'#346002',
-//         padding:10,
-//         marginTop:114,
-//         width:'25%',
-//         right:-300,
-//         height:"20%",
-//        }
-   
-
-//   })
 
 
 return (    

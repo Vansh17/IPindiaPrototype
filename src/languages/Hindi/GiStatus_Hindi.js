@@ -13,10 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Status_Design from "./Dropdown_Status_Gi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function GiStatus_Hindi({navigation})
 {
     const onPressHandlerBack=()=>{
@@ -37,10 +34,7 @@ export default function GiStatus_Hindi({navigation})
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
 
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text> */}
+               
                 <ScrollView>
                     <View style={[styles.card, styles.shadowProp]}>
                         <View style={styles.head}>

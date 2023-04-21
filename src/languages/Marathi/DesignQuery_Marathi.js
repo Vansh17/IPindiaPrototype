@@ -16,9 +16,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown_DesignQuery_Marathi from "../src/languages/Marathi/Dropdown_DesignQuery_Marathi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 import { getDatabase, ref, onValue,set } from 'firebase/database';
 
 export default function DesignQuery_Marathi({navigation})
@@ -26,10 +24,7 @@ export default function DesignQuery_Marathi({navigation})
     
   
     
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
+
 const [text1, setText1] = useState('')
     const [text2, setText2] = useState('')
 

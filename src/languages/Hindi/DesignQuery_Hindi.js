@@ -16,9 +16,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "../Hindi/Dropdown_DesignQuery_Hindi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 import { getDatabase, ref, onValue,set } from 'firebase/database';
 
 export default function DesignQuery_Hindi({navigation})

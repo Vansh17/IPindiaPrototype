@@ -29,30 +29,7 @@ export default function DesignStatus({navigation})
     navigation.navigate('DesignSearch')
     
   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
-//   const onPressHandlerLogin=()=>{
-//     navigation.navigate('Login')
-    
-//   }
 
-
-
-//   const[name,setFirstName]=useState('')
-//     useEffect(()=>{
-//         firebase.firestore().collection('users')
-//         .doc(firebase.auth().currentUser.uid).get()
-//         .then((snapshot)=>{
-//             if(snapshot.exists){
-//                 setFirstName(snapshot.data())
-//             }
-//             else{
-//                 console.log('User doesnot exists!')
-//             }
-//         })
-//     }, [])
 
         return (    
         
@@ -75,10 +52,7 @@ export default function DesignStatus({navigation})
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
 
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text> */}
+                
                 <ScrollView>
                     <View style={[styles.card, styles.shadowProp]}>
                         <View style={styles.head}>

@@ -13,9 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function GiQuerySent_Marathi({navigation})
 {
         return (    
@@ -39,21 +37,7 @@ export default function GiQuerySent_Marathi({navigation})
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text>
-                <TextInput
-                    style={styles.input1}
-                    placeholder=" Application Number"
-                    autoCapitalize="none"
-                    autoCorrect={false}   
-                    multiline
-                />
-                <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Query:
-                </Text> */}
+                
                 <View style={styles.input2}>
                     <Text style={styles.querystatus1}>
                     तुमची क्वेरी आमच्याकडे यशस्वीरित्या नोंदणीकृत झाली आहे.

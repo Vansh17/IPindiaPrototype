@@ -13,39 +13,9 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown_Gi from "./Dropdown_Gi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function GiQuerySent({navigation})
 {
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
-//   const onPressHandlerLogin=()=>{
-//     navigation.navigate('Login')
-    
-//   }
-
-
-
-//   const[name,setFirstName]=useState('')
-//     useEffect(()=>{
-//         firebase.firestore().collection('users')
-//         .doc(firebase.auth().currentUser.uid).get()
-//         .then((snapshot)=>{
-//             if(snapshot.exists){
-//                 setFirstName(snapshot.data())
-//             }
-//             else{
-//                 console.log('User doesnot exists!')
-//             }
-//         })
-//     }, [])
 
         return (    
         
@@ -68,21 +38,7 @@ export default function GiQuerySent({navigation})
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text>
-                <TextInput
-                    style={styles.input1}
-                    placeholder=" Application Number"
-                    autoCapitalize="none"
-                    autoCorrect={false}   
-                    multiline
-                />
-                <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Query:
-                </Text> */}
+               
                 <View style={styles.input2}>
                     <Text style={styles.querystatus1}>
                         YOUR QUERY HAS BEEN SUCCESSFULLY REGISTERED WITH US.
@@ -93,9 +49,7 @@ export default function GiQuerySent({navigation})
                         
                     
                 </View>
-                {/* <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttontxt}>Send query</Text>
-                </TouchableOpacity> */}
+              
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
                 <Image style = {styles.logobottom} source = {require('../assets/logo_bottom.png')} />
                 

@@ -13,10 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Status_Design from "./Dropdown_Status_Gi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function GiStatus_Gujarati({navigation})
 {
     const onPressHandlerBack=()=>{
@@ -190,7 +187,7 @@ export default function GiStatus_Gujarati({navigation})
                 
                 </ScrollView>
                 <View style={{top:-880,left:100}}>
-                        {/* <Dropdown_Status_Design/> */}
+                       
                     </View>
             </View>
            

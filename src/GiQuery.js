@@ -14,10 +14,7 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Gi from "./Dropdown_Gi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 import { getDatabase, ref, onValue,set } from 'firebase/database';
 
 export default function GiQuery({navigation})
@@ -37,14 +34,7 @@ export default function GiQuery({navigation})
         setText2('')
     }
     
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
+
 
 
         return (    

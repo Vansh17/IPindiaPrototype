@@ -13,10 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import { Component } from "react/cjs/react.development";
-// import Dropdown_DesignSearch_Marathi from "../Marathi/Dropdown_DesignSearch_Marathi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default class DesignSearch_Marathi extends Component
 {
   // const [isOpen,setIsOpen]=useState(false);

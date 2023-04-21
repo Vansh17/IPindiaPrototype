@@ -13,11 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import { Component } from "react/cjs/react.development";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Gi from "./Dropdown_Gi"
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default class GiSearch_Gujarati extends Component
 {
   
@@ -62,14 +58,7 @@ export default class GiSearch_Gujarati extends Component
     this.props.navigation.navigate('GiQuery_Gujarati')
 
   }
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-//   const onPressHandlerSupport=()=>{
-//     navigation.navigate('Support')
-    
-//   }
+
 
 render()
 {

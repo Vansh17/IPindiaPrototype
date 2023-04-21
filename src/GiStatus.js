@@ -13,10 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import Dropdown_Status_Design from "./Dropdown_Status_Gi";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function GiStatus({navigation})
 {
     const onPressHandlerBack=()=>{

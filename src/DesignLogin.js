@@ -16,10 +16,8 @@ import {
     
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
 import { firebase } from '../config';
-// import { firebase2 } from '../config2'
-// import { useFonts } from 'expo-font';
+
 
 export default function DesignLogin({navigation})
 {
@@ -45,22 +43,9 @@ export default function DesignLogin({navigation})
                 </View>
                 
                 
-                {/* <View style={styles.headertop}>
                 
-                    <Text style={styles.headertxt}>
-                        Home | About Us | Who's Who | Policy & Programs | 
-                        Achievements | RTI | Sitemap | Contact Us | Help Line                                        
-                    </Text>
-                </View> */}
                 <ScrollView>
                 <Image style = {styles.logo} source = {require('../assets/logo.png')} />
-                {/* <Image style = {styles.logo} source = {require('../../assets/logo.png')} /> */}
-                {/* <View style={styles.headermiddle}>
-
-                    <Text style={styles.headermiddletxt}>Designs Query</Text>
-                    
-                </View> */}
-                {/* <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View> */}
                 
                 <View style={styles.input2}>
                     <Text style={{fontSize:28,textAlign:'center',marginTop:20}}>Login</Text>

@@ -24,18 +24,7 @@ import { getDatabase, ref, onValue,set } from 'firebase/database';
 export default function DesignQuery({navigation})
 {
     
-//   const onPressHandlerScan=()=>{
-//     navigation.navigate('SelectFruit')
-    
-//   }
-    // function storeHighScore(userId,score)
-    // {
-    //     const db =getDatabase();
-    //     const reference = ref(db, 'users/'+userId);
-    //     set(reference,{
-    //         highscore:score,
-    //     });
-    // }
+
 
     const [text1, setText1] = useState('')
     const [text2, setText2] = useState('')

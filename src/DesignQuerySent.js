@@ -13,9 +13,7 @@ import {
     ScrollView,
   } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
-// import Dropdown from "./Dropdown";
-// import { firebase } from '../../config';
-// import { useFonts } from 'expo-font';
+
 export default function DesignQuerySent({navigation})
 {
 
@@ -41,21 +39,7 @@ export default function DesignQuerySent({navigation})
                     
                 </View>
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
-                {/* <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Application Number:
-                </Text>
-                <TextInput
-                    style={styles.input1}
-                    placeholder=" Application Number"
-                    autoCapitalize="none"
-                    autoCorrect={false}   
-                    multiline
-                />
-                <Text
-                    style={{fontSize:18, textAlign:'center',marginTop:10}}
-                >Query:
-                </Text> */}
+                
                 <View style={styles.input2}>
                     <Text style={styles.querystatus1}>
                         YOUR QUERY HAS BEEN SUCCESSFULLY REGISTERED WITH US.
@@ -64,9 +48,7 @@ export default function DesignQuerySent({navigation})
                         The query wil be answered shortly through your registered email id!
                     </Text>  
                 </View>
-                {/* <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttontxt}>Send query</Text>
-                </TouchableOpacity> */}
+                
                 <View style={{backgroundColor:'#DBDBDB', height:3,marginTop:20}}></View>
                 <Image style = {styles.logobottom} source = {require('../assets/logo_bottom.png')} />
                 
